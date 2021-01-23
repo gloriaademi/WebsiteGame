@@ -16,7 +16,7 @@ namespace Projekti_GamesWebsite.Controllers
         }
 
         [HttpGet]
-        public ActionResult login()
+        public ActionResult Login()
         {
             return View();
         }
