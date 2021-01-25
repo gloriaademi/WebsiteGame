@@ -6,10 +6,16 @@ using System.Web.Mvc;
 
 namespace Projekti_GamesWebsite.Controllers
 {
-    public class RegisterController : Controller
+    
+    public class AccountController : Controller
     {
-        // GET: Register
         public ActionResult Index()
+        {
+            return Redirect(Url.Content("~/"));
+        }
+        // GET: Account
+        [HttpGet]
+        public ActionResult Login()
         {
             return View();
         }

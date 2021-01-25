@@ -3367,7 +3367,7 @@ img.rounded {
 }
 
 .nk-navbar .nk-nav .nk-drop-item > a::after {
-    content: " +";
+    content: "";
 }
 
 .nk-navbar .nk-nav .nk-drop-item .nk-drop-item > a::after {
@@ -3898,6 +3898,7 @@ img.rounded {
     color: #eee;
     background-color: rgba(17, 22, 25, 0.8);
     z-index: 1;
+   
 }
 
 .nk-footer-logo {
@@ -3966,7 +3967,8 @@ img.rounded {
 }
 
 .nk-copyright {
-    background-color: #000;
+    background-color: #232930;
+    
 }
 
 .nk-copyright .container {
@@ -3983,6 +3985,7 @@ img.rounded {
 
 .nk-copyright .nk-copyright-right {
     padding: 21px 0;
+    padding-right: 25px;
     margin-left: auto;
 }
 
@@ -4051,6 +4054,7 @@ img.rounded {
 .nk-widget-post,
 .nk-widget-post-2 {
     padding-left: 110px;
+    padding-right: 20px;
 }
 
 .nk-widget-post + .nk-widget-post,

@@ -120,14 +120,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\LoginModelView.cs" />
-    <Compile Include="Models\RegisterModelView.cs" />
+    <Compile Include="Models\Account\LoginModelView.cs" />
+    <Compile Include="Models\Account\RegisterModelView.cs" />
+    <Compile Include="Models\PersonsModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -399,6 +399,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="php\ajax-contact-form.php" />
+    <Content Include="php\instagram\config.php" />
+    <Content Include="php\instagram\instagram.php" />
+    <Content Include="php\twitter\config.php" />
+    <Content Include="php\twitter\tweet.php" />
+    <Content Include="php\twitter\twitteroauth\OAuth.php" />
+    <Content Include="php\twitter\twitteroauth\twitteroauth.php" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="assets\vendor\bootstrap\dist\css\bootstrap.min.css.map" />
@@ -412,6 +419,7 @@
     <Content Include="assets\vendor\summernote\dist\font\summernote.ttf" />
     <Content Include="assets\vendor\summernote\dist\font\summernote.woff" />
     <Content Include="assets\vendor\summernote\dist\summernote-bs4.js.map" />
+    <Content Include="php\twitter\cache\bf84dcd0dcbe091695c7a789e6e9e53d" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -437,11 +445,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Register\Register.cshtml" />
-    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="php\instagram\cache\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
