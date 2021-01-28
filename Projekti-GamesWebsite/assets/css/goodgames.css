@@ -5197,6 +5197,8 @@ img.rounded {
     background-color: #dd163b;
     border-color: #a5102c;
     border-style: solid;
+    margin-left: 300px;
+    margin-top: -59px;
 }
 
 .nk-btn-color-main-1:hover, .nk-btn-color-main-1.hover {
@@ -6266,7 +6268,7 @@ img.rounded {
 /* Titles */
 .nk-feature-title {
     margin-bottom: .5rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .nk-feature-title a {

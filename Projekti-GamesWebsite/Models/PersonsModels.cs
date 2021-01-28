@@ -5,14 +5,14 @@ using System.Web;
 
 namespace Projekti_GamesWebsite.Models
 {
-    public class PersonsModels
+    public enum PersonType
     {
-        public enum PersonType
-        {
-            Admin,
-            User,
-            Visitor
-        }
+        Admin,
+        User,
+        Visitor
+    }
+   
+
         public abstract class Person
         {
             public int PersonId { get; set; }
@@ -32,5 +32,5 @@ namespace Projekti_GamesWebsite.Models
         {
             public DateTime StartDate { get; set; }
         }
-    }
+    
 }
