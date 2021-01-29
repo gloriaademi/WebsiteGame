@@ -16,6 +16,7 @@ namespace Projekti_GamesWebsite
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Core.GamesManager.Start();
         }
     }
 }

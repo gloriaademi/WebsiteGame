@@ -71,15 +71,26 @@
 
 
                         <li>
-                            @Html.ActionLink("Login", "Login", "Account")
-                            <a data-toggle="modal" data-target="#modalLogin">
-                                <span class="fa fa-user"></span>
-                            </a>
-                        </li>
+                            <i class="fas fa-user d-block text-center"></i>
+                            @if (Session["username"] == null)
+                            {
+                                @Html.ActionLink("Sign In", "Login", "Account", new { }, new { @class = "nav-link" });
+                            }
+                            else
+                            {
+                                @Html.ActionLink(Session["username"].ToString(), "Details", "Account", new { }, new { @class = "nav-link" });
+                            }
 
-
-
-                        <li>
+                        
+                            @if (Session["username"] != null)
+                            {
+                                    <li class="nav-item">
+                           <i class="fas fa-sign-out-alt d-block text-center"></i>
+                            @Html.ActionLink("Sign Out", "Logout", "Account", new { }, new { @class = "nav-link" })
+                                    </li>
+                             }
+                       <li>
+                            
                             <span class="nk-cart-toggle">
                                 <span class="fa fa-shopping-cart"></span>
                                 <span class="nk-badge">27</span>
@@ -115,9 +126,9 @@
                                     <a href="store-checkout.html" class="nk-btn nk-btn-rounded nk-btn-color-main-1 nk-btn-hover-color-white">Proceed to Checkout</a>
                                 </div>
                             </div>
-                        </li>
+                            </li>
 
-                    </ul>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -134,9 +145,9 @@
             <div class="container">
                 <div class="nk-nav-table">
 
-                    <a href="#" class="nk-nav-logo">
+                    <a href="@Url.Content("~/")" class="nk-nav-logo">
 
-                        <img src="@Url.Content("~/assets/images/logo.png")" alt="Gloria'sGames" width="199">
+                         <img src="@Url.Content("~/assets/images/logo.png")" alt="Gloria'sGames" width="199">
                     </a>
 
                     <ul class="nk-nav nk-nav-right d-none d-lg-table-cell" data-nav-mobile="#nk-nav-mobile">
