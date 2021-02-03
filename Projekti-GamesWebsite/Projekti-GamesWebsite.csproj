@@ -183,8 +183,12 @@
     <Content Include="assets\images\icon-gamepad-2.png" />
     <Content Include="assets\images\icon-gamepad.png" />
     <Content Include="assets\images\icon-mouse.png" />
+    <Content Include="assets\images\logG2.png" />
     <Content Include="assets\images\logo-2.png" />
     <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\logo11.png" />
+    <Content Include="assets\images\logo22.png" />
+    <Content Include="assets\images\logoG1.png" />
     <Content Include="assets\images\pegi-icon.jpg" />
     <Content Include="assets\images\post-1-fw.jpg" />
     <Content Include="assets\images\post-1-mid-square.jpg" />
@@ -450,6 +454,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Shared\_GameCard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

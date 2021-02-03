@@ -10,22 +10,22 @@ namespace Projekti_GamesWebsite.Controllers
     {
         public ActionResult Search(string search = "")
         {
-            var books = new List<Models.Games>();
+            var games = new List<Models.Games>();
             foreach (var game in Core.GamesManager.Games)
             {
                 if (game.Title.ToLower().IndexOf(search.ToLower()) > -1 ||
                     game.Platform.ToLower().IndexOf(search.ToLower()) > -1 ||
                         game.SKU.ToLower().IndexOf(search.ToLower()) > -1)
-                    books.Add(game);
+                    games.Add(game);
             }
-            return View(books);
+            return View(games);
         }
         public ActionResult Details(string referenca = "")
         {
             if (string.IsNullOrEmpty(referenca))
                 return Redirect(Url.Content("~/"));
-            var book = Core.GamesManager.Games.Where(x => x.Referenca.Replace("-", "") == referenca.Replace("-", "")).FirstOrDefault();
-            return View("Book", book);
+            var game = Core.GamesManager.Games.Where(x => x.Referenca.Replace("-", "") == referenca.Replace("-", "")).FirstOrDefault();
+            return View("Book", game);
         }
         [HttpGet]
         public ActionResult Create()

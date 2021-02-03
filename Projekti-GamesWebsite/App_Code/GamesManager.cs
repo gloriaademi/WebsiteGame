@@ -37,7 +37,10 @@ namespace Projekti_GamesWebsite.Core
                 Username = "user"
             });
 
+            Games.Add(new Models.Games()
+            {
 
+            });
         }
     }
 }
