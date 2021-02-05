@@ -52,12 +52,12 @@
                 <div class="nk-contacts-left">
                     <ul class="nk-social-links">
                         <li><a class="nk-social-rss" href="#"><span class="fa fa-rss"></span></a></li>
-                        <li><a class="nk-social-twitch" href="https://www.twitch.tv/"><span class="fab fa-twitch"></span></a></li>
-                        <li><a class="nk-social-steam" href="#"><span class="fab fa-steam"></span></a></li>
-                        <li><a class="nk-social-facebook" href="#"><span class="fab fa-facebook"></span></a></li>
-                        <li><a class="nk-social-google-plus" href="#"><span class="fab fa-google-plus"></span></a></li>
-                        <li><a class="nk-social-twitter" href="#" target="_blank"><span class="fab fa-twitter"></span></a></li>
-                        <li><a class="nk-social-pinterest" href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                        <li><a class="nk-social-twitch" href="https://www.twitch.tv/" target="_blank"><span class="fab fa-twitch"></span></a></li>
+                        <li><a class="nk-social-steam" href="#" target="_blank"><span class="fab fa-steam"></span></a></li>
+                        <li><a class="nk-social-facebook" href="https://www.facebook.com/" target="_blank"><span class="fab fa-facebook"></span></a></li>
+                        <li><a class="nk-social-google-plus" href="https://myaccount.google.com/profile" target="_blank"><span class="fab fa-google-plus"></span></a></li>
+                        <li><a class="nk-social-twitter" href="https://twitter.com/?lang=en" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                        <li><a class="nk-social-pinterest" href="https://www.pinterest.com/" target="_blank"><span class="fab fa-pinterest-p"></span></a></li>
                     </ul>
                 </div>
                 <div class="nk-contacts-right">
@@ -139,7 +139,7 @@
                                     
                                     <li>
                                         <a href="blog-fullwidth.html">
-                                            Blog Fullwidth
+                                            @Html.ActionLink("Checkout", "checkout", "checkout")
 
                                         </a>
                                     </li>
@@ -149,19 +149,19 @@
                             
                             <li class=" nk-drop-item">
                                 <a href="tournaments.html">
-                                    @Html.ActionLink("Coming Soon", "CoomingSoon", "ComingSoon")
+                                    @Html.ActionLink("Coming Soon", "comingSoon", "comingSoon")
 
                                 </a><ul class="dropdown">
 
                                     <li>
                                         <a href="tournaments.html">
-                                            @Html.ActionLink("Offline", "Register", "Account")
+                                            @Html.ActionLink("Offline", "", "")
 
                                         </a>
                                     </li>
                                     <li>
                                         <a href="tournaments-teams.html">
-                                            @Html.ActionLink("404", "Register", "Account")
+                                            @Html.ActionLink("404", "", "")
 
                                         </a>
                                     </li>

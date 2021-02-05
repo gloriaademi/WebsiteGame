@@ -123,6 +123,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\checkoutController.cs" />
     <Compile Include="Controllers\comingsoonController.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Models\Account\LoginModelView.cs" />
     <Compile Include="Models\Account\RegisterModelView.cs" />
     <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\checkout.cs" />
     <Compile Include="Models\comingsoon.cs" />
     <Compile Include="Models\Games.cs" />
     <Compile Include="Models\PersonsModels.cs" />
@@ -471,6 +473,7 @@
     <Content Include="Views\Game\Game.cshtml" />
     <Content Include="Views\Cart\Cart.cshtml" />
     <Content Include="Views\comingsoon\comingsoon.cshtml" />
+    <Content Include="Views\checkout\checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
