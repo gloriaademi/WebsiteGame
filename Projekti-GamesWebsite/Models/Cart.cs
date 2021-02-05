@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Projekti_GamesWebsite.Models
 {
-    public class comingsoon
+    public class Cart
     {
     }
 }
