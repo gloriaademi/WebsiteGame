@@ -8,7 +8,7 @@ namespace Projekti_GamesWebsite.Models
 {
     public class Games
     {
-        [Required]
+        
         [StringLength(50)]
         public string Title { get; set; }
         [Required]
@@ -21,7 +21,7 @@ namespace Projekti_GamesWebsite.Models
         public string Description { get; set; }
         public string Image { get; set; }
         [Required]
-        public decimal Price { get; set; }
+        public string Price { get; set; }
         [Required]
         public int Quantity { get; set; }
         public List<string> Categories { get; set; }

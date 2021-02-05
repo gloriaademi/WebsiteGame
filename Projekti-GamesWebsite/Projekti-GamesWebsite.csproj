@@ -122,15 +122,19 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ComingSoonController.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account\LoginModelView.cs" />
     <Compile Include="Models\Account\RegisterModelView.cs" />
+    <Compile Include="Models\ComingSoon.cs" />
     <Compile Include="Models\Games.cs" />
     <Compile Include="Models\PersonsModels.cs" />
+    <Compile Include="Models\Store.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +154,8 @@
     <Content Include="assets\images\bg-top-5.png" />
     <Content Include="assets\images\bg-top.png" />
     <Content Include="assets\images\favicon.png" />
+    <Content Include="assets\images\Fortnite.jpg" />
+    <Content Include="assets\images\forza-horizon-4.jpg" />
     <Content Include="assets\images\gallery-1-thumb.jpg" />
     <Content Include="assets\images\gallery-1.jpg" />
     <Content Include="assets\images\gallery-10-thumb.jpg" />
@@ -180,6 +186,8 @@
     <Content Include="assets\images\gallery-group-4.jpg" />
     <Content Include="assets\images\gallery-group-5.jpg" />
     <Content Include="assets\images\gallery-group-6.jpg" />
+    <Content Include="assets\images\God_of_War_4.jpg" />
+    <Content Include="assets\images\GTA-5.png" />
     <Content Include="assets\images\icon-gamepad-2.png" />
     <Content Include="assets\images\icon-gamepad.png" />
     <Content Include="assets\images\icon-mouse.png" />
@@ -332,6 +340,9 @@
     <Content Include="assets\images\product-9-square.jpg" />
     <Content Include="assets\images\product-9-xs.jpg" />
     <Content Include="assets\images\product-9.jpg" />
+    <Content Include="assets\images\productPubg1.jpg" />
+    <Content Include="assets\images\Pubg-Card.jpg" />
+    <Content Include="assets\images\Rocket_League.jpg" />
     <Content Include="assets\images\slide-1-thumb.jpg" />
     <Content Include="assets\images\slide-1.jpg" />
     <Content Include="assets\images\slide-2-thumb.jpg" />
@@ -454,12 +465,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Shared\_GameCard.cshtml" />
+    <Content Include="Views\Store\Store.cshtml" />
+    <Content Include="Views\Game\Game.cshtml" />
+    <Content Include="Views\ComingSoon\CoomingSoon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="php\instagram\cache\" />
-    <Folder Include="Views\Game\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

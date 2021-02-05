@@ -63,11 +63,6 @@
                 <div class="nk-contacts-right">
                     <ul class="nk-contacts-icons">
 
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#modalSearch">
-                                <span class="fa fa-search"></span>
-                            </a>
-                        </li>
 
 
                         <li>
@@ -91,42 +86,12 @@
                         }
                             <li>
 
-                                <span class="nk-cart-toggle">
+                                <span class="nk-cart-toggle" style="color:white; font-size: 1rem;">
+                                    @Html.ActionLink("Cart","Store","Store")
                                     <span class="fa fa-shopping-cart"></span>
                                     <span class="nk-badge">27</span>
                                 </span>
-                                <div class="nk-cart-dropdown">
-
-                                    <div class="nk-widget-post">
-                                        <a href="store-product.html" class="nk-post-image">
-                                            <img src="@Url.Content("~/assets/images/product-5-xs.jpg")" alt="In all revolutions of">
-                                        </a>
-                                        <h3 class="nk-post-title">
-                                            <a href="#" class="nk-cart-remove-item"><span class="ion-android-close"></span></a>
-                                            <a href="store-product.html">In all revolutions of</a>
-                                        </h3>
-                                        <div class="nk-gap-1"></div>
-                                        <div class="nk-product-price">€ 23.00</div>
-                                    </div>
-
-                                    <div class="nk-widget-post">
-                                        <a href="store-product.html" class="nk-post-image">
-                                            <img src="@Url.Content("~/assets/images/product-7-xs.jpg")" alt="With what mingled joy">
-                                        </a>
-                                        <h3 class="nk-post-title">
-                                            <a href="#" class="nk-cart-remove-item"><span class="ion-android-close"></span></a>
-                                            <a href="store-product.html">With what mingled joy</a>
-                                        </h3>
-                                        <div class="nk-gap-1"></div>
-                                        <div class="nk-product-price">€ 14.00</div>
-                                    </div>
-
-                                    <div class="nk-gap-2"></div>
-                                    <div class="text-center">
-                                        <a href="store-checkout.html" class="nk-btn nk-btn-rounded nk-btn-color-main-1 nk-btn-hover-color-white">Proceed to Checkout</a>
-                                    </div>
-
-                                </div>
+                                
                             </li>
 
                         </ul>
@@ -157,69 +122,11 @@
                                 <a href="#">
                                     @Html.ActionLink("Home", "Index", "Home")
 
-                                </a><ul class="dropdown">
-
-                                    <li>
-                                        <a href="elements.html">
-                                            @Html.ActionLink("Register", "Register", "Account")
-
-                                        </a>
-                                    </li>
-                                    <li class=" nk-drop-item">
-                                        <a href="forum.html">
-                                            Forum
-
-                                        </a><ul class="dropdown">
-
-                                            <li>
-                                                <a href="forum.html">
-                                                    Forum
-
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="forum-topics.html">
-                                                    Topics
-
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="forum-single-topic.html">
-                                                    Single Topic
-
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="widgets.html">
-                                            Widgets
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="coming-soon.html">
-                                            Coming Soon
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="offline.html">
-                                            Offline
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="404.html">
-                                            404
-
-                                        </a>
-                                    </li>
-                                </ul>
+                                </a>
                             </li>
                             <li class=" nk-drop-item">
                                 <a href="blog-list.html">
-                                    @Html.ActionLink("Register", "Register", "Account")
+                                    @Html.ActionLink("Store", "Store", "Store")
 
                                 </a><ul class="dropdown">
 
@@ -229,116 +136,39 @@
 
                                         </a>
                                     </li>
-                                    <li class=" nk-drop-item">
-                                        <a href="blog-grid.html">
-                                            Blog With Sidebar
-
-                                        </a><ul class="dropdown">
-
-                                            <li>
-                                                <a href="blog-grid.html">
-                                                    Blog Grid
-
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-list.html">
-                                                    Blog List
-
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    
                                     <li>
                                         <a href="blog-fullwidth.html">
                                             Blog Fullwidth
 
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="blog-article.html">
-                                            Blog Article
-
-                                        </a>
-                                    </li>
+                                  
                                 </ul>
                             </li>
-                            <li>
-                                <a href="gallery.html">
-                                    @Html.ActionLink("Register", "Register", "Account")
-
-                                </a>
-                            </li>
+                            
                             <li class=" nk-drop-item">
                                 <a href="tournaments.html">
-                                    @Html.ActionLink("Register", "Register", "Account")
+                                    @Html.ActionLink("Coming Soon", "CoomingSoon", "ComingSoon")
 
                                 </a><ul class="dropdown">
 
                                     <li>
                                         <a href="tournaments.html">
-                                            @Html.ActionLink("Register", "Register", "Account")
+                                            @Html.ActionLink("Offline", "Register", "Account")
 
                                         </a>
                                     </li>
                                     <li>
                                         <a href="tournaments-teams.html">
-                                            Teams
+                                            @Html.ActionLink("404", "Register", "Account")
 
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="tournaments-teammate.html">
-                                            Teammate
-
-                                        </a>
-                                    </li>
+                                   
                                 </ul>
                             </li>
-                            <li class=" nk-drop-item">
-                                <a href="store.html">
-                                    @Html.ActionLink("Register", "Register", "Account")
-
-                                </a><ul class="dropdown">
-
-                                    <li>
-                                        <a href="store.html">
-                                            Store
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="store-product.html">
-                                            Product
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="store-catalog.html">
-                                            Catalog
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="store-catalog-alt.html">
-                                            Catalog Alt
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="store-checkout.html">
-                                            Checkout
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="store-cart.html">
-                                            Cart
-
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+                            
                         </ul>
                         @* <ul class="nk-nav nk-nav-right nk-nav-icons">
 

@@ -46,5 +46,17 @@ namespace Projekti_GamesWebsite.Controllers
             }
             return Redirect("Create");
         }
+        public ActionResult Game()
+        {
+            return View();
+        }
+        [HttpGet]
+        public ActionResult Game(string title)
+        {
+            var recipe = Core.GamesManager.Games.Where(x => x.Title == title).FirstOrDefault();
+            if (recipe != null)
+                return View(recipe);
+            return Redirect(Url.Content("~/Error"));
+        }
     }
 }
